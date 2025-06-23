@@ -15,26 +15,49 @@ const Post = ({ post, setCurrentId }) => {
   const classes = useStyles();
   const user = JSON.parse(localStorage.getItem('profile'));
 
-  const Likes = () => {
-    if (!post?.likes || post.likes.length === 0) {
-      return <><ThumbUpAltOutlined fontSize="small" />&nbsp;Like</>;
-    }
+  const userId = user?.result?.sub || user?.result?._id; //fixed like btn ui
+  const Likes = () => { //fixed like btn ui
+  if (!post?.likes || post.likes.length === 0) {
+    return <><ThumbUpAltOutlined fontSize="small" />&nbsp;Like</>;
+  }
 
-    return post.likes.find((like) => like === (user?.result?.googleId || user?.result?._id))
-      ? (
-        <>
-          <ThumbUpAltIcon fontSize="small" />&nbsp;
-          {post.likes.length > 2
-            ? `You and ${post.likes.length - 1} others`
-            : `${post.likes.length} like${post.likes.length > 1 ? 's' : ''}`}
-        </>
-      ) : (
-        <>
-          <ThumbUpAltOutlined fontSize="small" />&nbsp;
-          {post.likes.length} {post.likes.length === 1 ? 'Like' : 'Likes'}
-        </>
-      );
-  };
+  const hasLiked = post.likes.includes(userId);
+
+  return hasLiked ? (
+    <>
+      <ThumbUpAltIcon fontSize="small" />&nbsp;
+      {post.likes.length > 2
+        ? `You and ${post.likes.length - 1} others`
+        : `${post.likes.length} like${post.likes.length > 1 ? 's' : ''}`}
+    </>
+  ) : (
+    <>
+      <ThumbUpAltOutlined fontSize="small" />&nbsp;
+      {post.likes.length} {post.likes.length === 1 ? 'Like' : 'Likes'}
+    </>
+  );
+};
+
+  // const Likes = () => {
+  //   if (!post?.likes || post.likes.length === 0) {
+  //     return <><ThumbUpAltOutlined fontSize="small" />&nbsp;Like</>;
+  //   }
+
+  //   return post.likes.find((like) => like === (user?.result?.googleId || user?.result?._id))
+  //     ? (
+  //       <>
+  //         <ThumbUpAltIcon fontSize="small" />&nbsp;
+  //         {post.likes.length > 2
+  //           ? `You and ${post.likes.length - 1} others`
+  //           : `${post.likes.length} like${post.likes.length > 1 ? 's' : ''}`}
+  //       </>
+  //     ) : (
+  //       <>
+  //         <ThumbUpAltOutlined fontSize="small" />&nbsp;
+  //         {post.likes.length} {post.likes.length === 1 ? 'Like' : 'Likes'}
+  //       </>
+  //     );
+  // };
 
 
   return (
