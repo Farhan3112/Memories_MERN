@@ -3,7 +3,7 @@
 
 **Memories** is a full-stack social media web application where users can sign in using Google OAuth, create and share posts, like and comment on others’ posts, search for content using tags or keywords, and view suggested related posts. Each user has their own profile showing all of their submitted posts. The app is built using the MERN stack (MongoDB, Express, React, Node.js) and styled with Material-UI.
 
-![Home Screenshot](./screenshots/home.png)
+![Home Screenshot](./screenshots/Home.PNG)
 
 ---
 
@@ -157,7 +157,7 @@ GET     /posts/:id
 
 | Home Page                     | Post Details                     | Profile Page                |
 |------------------------------|----------------------------------|-----------------------------|
-| ![Home](./screenshots/home.png) | ![Post](./screenshots/post.png) | ![Profile](./screenshots/profile.png) |
+| ![Home](./screenshots/Home.PNG) | ![Post](./screenshots/post.PNG) | ![Profile](./screenshots/profile.PNG) |
 
 ---
 
