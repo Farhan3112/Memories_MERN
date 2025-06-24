@@ -155,9 +155,18 @@ GET     /posts/:id
 
 ## 🖼️ Screenshots
 
-| Home Page                     | Post Details                     | Profile Page                |
-|------------------------------|----------------------------------|-----------------------------|
-| ![Home](./screenshots/Home.PNG) | ![Post](./screenshots/post.PNG) | ![Profile](./screenshots/profile.PNG) |
+### 🏠 Home Page
+![Home](./screenshots/Home.PNG)
+
+---
+
+### 📝 Post Details
+![Post](./screenshots/post.PNG)
+
+---
+
+### 👤 Profile Page
+![Profile](./screenshots/profile.PNG)
 
 ---
 
