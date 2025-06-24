@@ -151,7 +151,7 @@ App will run at: `http://localhost:3000`
 
 ## 🌐 Live Demo
 
-🔗 [Live App on Render](https://memories-client-i4nq.onrender.com/posts)
+🔗 [Live App on Render](https://memories-client-i4nq.onrender.com)
 
 ---
 
