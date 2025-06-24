@@ -1,2 +1,6 @@
-node_modules
-build
+# Ignore node_modules from both client and server
+client/node_modules/
+server/node_modules/
+
+# Optional: Ignore .env files if you use them
+*.env
