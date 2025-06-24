@@ -195,4 +195,4 @@ This project is licensed under the MIT License.
 ## 👨‍💻 Author
 
 **Farhan Shamshad**  
-[GitHub](https://github.com/farhanshamshad)
+[GitHub](https://github.com/Farhan3112)
