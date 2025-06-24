@@ -16,6 +16,7 @@
 - 🧵 Suggested related posts section
 - 📄 Pagination for large content lists
 - 👤 User profiles with all their posts
+- 📱 Fully responsive UI – optimized for mobile, tablet, and desktop devices  
 
 ---
 
