@@ -22,6 +22,10 @@ app.use('/', (req,res) => {
   res.send('Hello to Memories API');
 })
 
+app.get('/keep-alive', (req, res) => { //ping
+  res.status(200).send('OK');
+});
+
 const PORT = process.env.PORT|| 5000;
 
 mongoose.connect(process.env.CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
