@@ -13,7 +13,7 @@ const store = createStore(reducers, {}, compose(applyMiddleware(thunk)));
 
 ReactDOM.render(
   <Provider store={store}>
-    <GoogleOAuthProvider clientId="806114683037-neq6rj175e10hk40s1abi9jukubfha2p.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}>
       <App />
     </GoogleOAuthProvider>
   </Provider>,
