@@ -60,21 +60,38 @@
 
 ```
 memories/
-├── client/               # React frontend
+├── client/                     # React frontend
 │   ├── src/
-│   │   ├── components/   # Reusable components (Posts, Form, Auth, etc.)
-│   │   ├── pages/        # Routes like Home, Profile
-│   │   ├── App.js
-│   │   └── index.js
-├── server/               # Node.js backend
-│   ├── controllers/      # Route logic
-│   ├── models/           # MongoDB schemas
-│   ├── routes/           # Express route definitions
-│   ├── middleware/       # Auth middleware
-│   ├── index.js          # Server entry point
-├── .env
-├── package.json
-└── README.md
+│   │   ├── actions/            # Redux actions
+│   │   ├── api/                # Axios API calls
+│   │   ├── components/         # All UI components
+│   │   │   ├── Auth/
+│   │   │   ├── CreatorOrTag/
+│   │   │   ├── Form/
+│   │   │   ├── Home/
+│   │   │   ├── Navbar/
+│   │   │   ├── PostDetails/
+│   │   │   ├── Posts/
+│   │   │   ├── Pagination.jsx
+│   │   │   └── styles.jsx
+│   │   ├── constants/          # Action types
+│   │   ├── images/             # Static images/assets
+│   │   ├── reducers/           # Redux reducers
+│   │   ├── styles.js           # Global MUI styles
+│   │   ├── App.js              # Root app component
+│   │   ├── index.js            # React DOM render
+│   │   └── index.css           # Global CSS
+│
+├── server/                     # Node.js backend
+│   ├── controllers/            # Route logic
+│   ├── models/                 # MongoDB schemas
+│   ├── routes/                 # Express routes
+│   ├── middleware/             # Auth middleware
+│   └── index.js                # Backend entry point
+│
+├── .env                        # Environment variables
+├── package.json                # Project metadata and scripts
+└── README.md                   # Project documentation
 ```
 
 ---
