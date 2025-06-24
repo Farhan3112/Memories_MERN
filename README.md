@@ -155,6 +155,20 @@ App will run at: `http://localhost:3000`
 
 ---
 
+## 🔥 API Endpoints (Examples)
+
+```http
+GET     /posts
+POST    /posts
+PATCH   /posts/:id
+DELETE  /posts/:id
+POST    /user/signin
+POST    /user/signup
+GET     /posts/search?query=abc
+GET     /posts/:id
+```
+---
+
 ## 🖼️ Screenshots
 
 ### 🏠 Home Page
