@@ -142,7 +142,7 @@ npm install
 #### Create `.env` File:
 
 ```env
-REACT_APP_API_URL=backend_api_url
+REACT_APP_API_URL=http://localhost:5000/
 REACT_APP_GOOGLE_CLIENT_ID=google_oauth_client_id
 ```
 
